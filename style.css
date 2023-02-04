@@ -38,3 +38,66 @@ body h2 {
 
     gap: 25px;
 }
+
+.price-col {
+    background-color: darkslateblue;
+
+    /* the below padding is %age of the above width- line 29 */
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.price-col p {
+    font-size: 30px;
+}
+
+.price-col h3 span {
+    font-size: 15px;
+}
+
+.price-col h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 600;
+
+}
+
+.price-col ul {
+    list-style: none;
+    margin: 20px 0;
+    color: #fff;
+
+    /* text-align:left :- the text in the center which you have written will move to the left */
+    text-align: left;
+}
+
+.price-col ul li {
+    margin: 15px 0;
+}
+
+/* We need to create the bullet points using CSS */
+.price-col ul li::before {
+    content: '\2022';
+    color: red;
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.price-col button {
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 2s;
+}
+
+.price-col button:hover {
+    background-color: aqua;
+}
